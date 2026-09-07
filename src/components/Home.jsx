@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import {motion} from 'framer-motion'
-import { SlideRight } from '../utility/Animation'
+import { SlideLeft, SlideRight } from '../utility/Animation'
 
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
    
    
    
-   className='ml-14 mt-40 text-6xl font-semibold leading-20'>Gym Gives you the <br /> perfect <span className='text-orange-500'>Health</span></motion.h1>
+   className='ml-14 mt-40 text-6xl font-bold leading-20'>Gym Gives you the <br /> perfect <span className='text-orange-500'>Health</span></motion.h1>
        <motion.p
        
        
@@ -47,7 +47,14 @@ const Home = () => {
        
        className='mt-9 ml ml-16 text-2xl font-semibold border-none h-12 w-38 rounded-lg bg-orange-500 hover:bg-orange-400'>Order 
         Now</motion.button>
-        <img src="dumbell.webp" alt="" className='ml-160 -mt-85' />
+        <motion.img
+        
+         variants={SlideLeft(0.6)}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+        
+        src="dumbell.webp" alt="" className='ml-160 -mt-85' />
        </div>
     
     </div>

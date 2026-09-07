@@ -1,11 +1,17 @@
 import React from 'react'
 import {motion} from 'framer-motion'
+import { SlideRight } from '../utility/Animation'
 
 
 const Programs = ({icon,heading,paragraph1}) => {
   return (
     <div>
             <motion.div
+
+             variants={SlideRight(0.6)}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
 
        
             

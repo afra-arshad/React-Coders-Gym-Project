@@ -1,13 +1,22 @@
 import { section } from 'framer-motion/client'
 import React from 'react'
 import {motion} from 'framer-motion'
-import { SlideUp } from '../utility/Animation'
+import { SlideRight, SlideUp } from '../utility/Animation'
 import {Slide} from '../utility/Animation'
 const Blogs = ({image,heading,para,btn}) => {
   return (
     <section id='blogs' className=' flex items-center px-10 mt-14 bg-neutral-50'>
     <div >
-      <img src={image} alt="hero picture" className='h-130 w-240 bg-neutral-100' />
+      <motion.img
+      
+       variants={SlideRight(0.9)}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      
+      
+      
+      src={image} alt="hero picture" className='h-130 w-240 bg-neutral-100' />
       </div>
       <div className=' relative ml-9 '>
       <motion.h1
