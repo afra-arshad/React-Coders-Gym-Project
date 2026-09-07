@@ -7,6 +7,8 @@ import { FaHeartPulse } from "react-icons/fa6";
 import Pheading from './components/Pheading';
 import Pheading2 from './components/Pheading2';
 import Programs from './components/Programs';
+import Footer from './components/Footer';
+import Blogs from './components/Blogs';
 
 
 // import Products from './components/Products'
@@ -48,6 +50,13 @@ const App = () => {
      paragraph1={<p className='ml-1'>Helps track your heart rate and<br /><span className='ml-14'>workouts.</span><br/></p>}
      paragraph2={<h3><span className='ml-1 mb-4'>A heart rate monitor is a fitness</span><br /> <span className='ml-9'>device that tracks your</span><br /> <span className='ml-2'>heartbeat in real-time, helping</span> <br /><span className='ml-5'>you optimize your workouts</span><br /><span className='ml-13'>and maintain.</span></h3>}/>
      </div>
+      
+       <Blogs
+     image={"https://codergym.netlify.app/2.webp"}
+     heading="Transform Your Body & Mind With Perfect Fitness"
+     para="Achieve your fitness goals with expert guidance and premium equipment. Build strength, endurance, and confidence."
+     btn="Explore More"/>
+    
      <Pheading2/>
      {/* div of programs */}
      <div className='ml-30 flex gap-7'>
@@ -81,12 +90,17 @@ const App = () => {
      />
      </div>
 
+     <div className='border border-neutral-50 mt-20 bg-neutral-50 '>
+         <Blogs
+     image={"https://codergym.netlify.app/3.webp"}
+     heading="Your Health, Our Priority-Stay Strong & Fit"
+     para={<h3>A healthy lifestyle starts with the right mindset. Join us and take the first step toward a stronger and happier you!</h3>}
+     btn="Learn More"/>
+     </div>
 
 
 
-
-
-
+    <Footer/>
 
     </div>
   )

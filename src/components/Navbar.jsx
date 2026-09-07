@@ -23,7 +23,7 @@ const Navbar = () => {
         <li className='hover:text-orange-500 duration-300 transition-all ease-in-out'><a href="#home">Home</a></li>
         <li className='hover:text-orange-500 duration-300 transition-all ease-in-out'><a href="#products">Products</a></li>
         <li className='hover:text-orange-500 duration-300 transition-all ease-in-out'><a href="#programs">Programs</a></li>
-        <li className='hover:text-orange-500 duration-300 transition-all ease-in-out'> <a href="#blog">Blogs</a></li>
+        <li className='hover:text-orange-500 duration-300 transition-all ease-in-out'> <a href="#blogs">Blogs</a></li>
         <li className='hover:text-orange-500 duration-300 transition-all ease-in-out'><a href="#offer">Offers</a></li>
     </ul>
      
