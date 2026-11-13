@@ -21,7 +21,7 @@ const App = () => {
      {/* heading */}
      <Pheading/>
      {/* div of products */}
-     <div className='flex ml-14 gap-5 overflow-hidden'>
+     <div className='grid lg:grid-cols-4 ml-10 overflow-hidden md:grid-cols-2'>
       {/* card 1 */}
      <Products
      icon={<FaDumbbell/>}
@@ -59,26 +59,26 @@ const App = () => {
     
      <Pheading2/>
      {/* div of programs */}
-     <div className='ml-30 flex gap-7'>
+     <div className='lg:ml-20 grid lg:grid-cols-4 gap-7 grid-cols-1 p-6'>
       {/* 1st card of programs */}
      <Programs
       icon={<FaDumbbell/>}
      heading={<h1>Strength <br />Training</h1>}
-     paragraph1={<h3><span className='ml-8 mb-4'>Build muscle and</span><br /> <span className='ml-6'>improve endurance </span><br /> <span className='ml-8'>with our guided </span> <br /><span className='ml-6'>strength workouts.</span></h3>}
+     paragraph1={<h3><span className=' mb-4 lg:ml-7'>Build muscle and</span><br /> <span className='lg:ml-4'>improve endurance </span><br /> <span className='lg:ml-6'>with our guided </span > <br /><span className='lg:ml-5'>strength workouts.</span></h3>}
      />
 
       {/* 2nd card of programs */}
       <Programs
       icon={<MdOutlinePedalBike/>}
      heading={<h1> <span className='ml-1'>Cardio</span><br /> <span className='-ml-3'>Workouts</span></h1>}
-     paragraph1={<h3><span className='ml-8 mb-4'>Boost your heart</span><br /> <span className='ml-9'>health with our</span><br /> <span className='ml-6'>high-energy cardio</span> <br /><span className='ml-13'>sessions.</span></h3>}
+     paragraph1={<h3><span className=' mb-4 lg:ml-6'>Boost your heart</span><br /> <span className='lg:ml-7'>health with our</span><br /> <span className='lg:ml-5'>high-energy cardio</span> <br /><span className='lg:ml-12' >sessions.</span></h3>}
      />
 
     {/* 3rd card */}
       <Programs
       icon={<FaHeartPulse/>}
-     heading={<h1 className='-ml-7'>Heart Health</h1>}
-     paragraph1={<h3><span className='ml-4 mb-4'>Monitor your fitness </span><br /> <span className='ml-4'>progress and stay in</span><br /> <span className='ml-8'>top condition.</span></h3>}
+     heading={<h1 className='lg:-ml-7'>Heart Health</h1>}
+     paragraph1={<h3><span className='ml-4 mb-4'>Monitor your fitness </span><br /> <span className='ml-4'>progress and stay in</span><br /> <span className='lg:ml-10' >top condition.</span></h3>}
      
      />
 
@@ -86,7 +86,7 @@ const App = () => {
       <Programs
       icon={<FaRunning />}
      heading={<h1 className='-ml-3'>Endurance<br />Training</h1>}
-     paragraph1={<h3><span className='ml-8 mb-4'>Improve your</span><br /> <span className='ml-4'>stamina with expert-</span><br /> <span className='ml-3'>designed endurance</span> <br /><span className='ml-13'>routines.</span> </h3>}
+     paragraph1={<h3><span className=' mb-4 lg:ml-8'>Improve your</span><br /> <span className='ml-4'>stamina with expert-</span><br /> <span className='ml-3'>designed endurance</span> <br /><span className='lg:ml-12'>routines.</span> </h3>}
      />
      </div>
 
